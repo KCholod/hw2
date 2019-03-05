@@ -1,0 +1,21 @@
+In this exercise, we will predict the number of applications received using the other
+variables in the \texttt{College} dataset.
+
+```{r}
+library(tidyverse)
+library(ISLR)
+head(College)
+```
+
+
+(a) Split the dataset into a training set and a test test (of roughly equal size). Fit a linear model
+    using least
+    squares on the training set, and report the prediction error on the test set.
+
+
+(b) Use 10-fold cross-validation to estimate the prediction error (on the whole dataset).
+    Compare to that of part (a). 
+    
+    
+(c) Comment on the bias and variance of the prediction errors of (a) and (b).
+

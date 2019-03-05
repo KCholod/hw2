@@ -1,0 +1,34 @@
+We will now consider the `Boston` housing data set, from the `MASS` library.
+
+```{r}
+library(MASS)
+head(Boston)
+```
+
+(a) Based on this data set, provide an estimate for the population mean of `medv`, call it $\hat \mu$.
+
+
+(b) Provide an estimate of the standard error of $\hat \mu$.
+
+Hint: We can compute the standard error of the sample mean by dividing the sample standard deviation by the square root of the number of observations.
+
+
+(c) Now estimate the standard error of $\hat \mu$ using the bootstrap. How does this compare to your answer from (b)?
+
+
+(d) Based on your bootstrap estimate from (c), provide a 95 % confidence interval for the mean of `medv`. Compare it to the results obtained by `t.test(Boston$medv)`.
+
+Hint: You can approximate a 95 % confidence interval using the formula
+$$
+[\hat \mu - 2 SE(\hat \mu), \hat \mu + 2 SE(\hat \mu)]
+$$
+
+
+(e)
+Based on this dataset, provide an estimate, $\hat m$, for the median value of `medv` in the population.
+
+(f) We now would like to estimate the standard error of $\hat m$. Unfortunately, there is no simple formula for computing the standard error of the median. Instead, estimate the standard error of the median using the bootstrap. Comment on your findings.
+
+
+(g) Based on your bootstrap estimate from (f), provide a 95 % confidence interval for the median of `medv`.
+

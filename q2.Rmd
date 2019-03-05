@@ -1,0 +1,17 @@
+Using the `Boston` data set from the library `MASS`, fit classification models in order to predict whether a given town has a crime rate above or below the median. 
+
+```{r}
+library(MASS)
+head(Boston)
+```
+
+(a) Split the data into training and test set.
+
+
+(b) Fit a logisitic regression using the training set to predict the probability that a given town has a crime rate above or below the median.
+
+
+(c) Calucate the misclassification rate, sensitivity and specificity of the model in predicting the test set.
+
+
+(d) Draw an ROC curve and calculate the value of AUC.
